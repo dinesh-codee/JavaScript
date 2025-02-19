@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div style="align-items: center;text-align: center; height: 100vh; width: 100vw;">
+        <h1>Text change</h1>
+        <h4 id="click">Click below to change</h4>
+        <button type="button" onclick="document.getElementById('click').innerHTML='Hello JavaScript'">Click Me</button><br>
+
+
+        <h1>Shows Date Here</h1>
+        <p id="date">Click To Show Current Date</p>
+        <button type="button" onclick="document.getElementById('date').innerHTML=Date()">Show date</button><br>
+
+
+        <h1>Show the bulb with different color</h1>
+        <img src="img/pic_bulbon.gif" style="height: 250px;" alt="" id="bulb"><br>
+        <button type="button" onclick="document.getElementById('bulb').src='img/pic_bulbon.gif'">Yellow</button>
+        <button type="button" onclick="document.getElementById('bulb').src='img/red.webp'">Red</button>
+        <button type="button" onclick="document.getElementById('bulb').src='img/green.png'">Green</button>
+        <button type="button" onclick="document.getElementById('bulb').src='img/blue.png'">Blue</button>
+        <button type="button" onclick="document.getElementById('bulb').src='img/pic_bulboff.gif'">off</button><br><br>
+
+        <script>
+            window.alert('You are hacked');
+        </script>
+        
+
+    </div>
+    <br>
+</body>
+</html>

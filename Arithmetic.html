@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 !</title>
+</head>
+
+<body style="text-align: center;">
+    <!-- Arithmetic operator, arrays, variables declare -->
+    <h1>Arithmetic Operator | Declaring using Let</h1>
+    <h4 style="color: red;" id="num"></h4>
+    <h4 style="color: green;" id="addition"></h4>
+    <h4 style="color: green;" id="subtraction"></h4>
+    <h4 style="color: green;" id="multiplication"></h4>
+    <h4 style="color: green;" id="division"></h4>
+    <script>
+        let num1 = 2;
+        let num2 = 15;
+        let sum = num1 + num2;
+        let dif = num1 - num2;
+        let mul = num1 * num2;
+        let div = num1 / num2;
+        document.getElementById("num").innerHTML = "The provided number are " + num1 + " and " + num2;
+        document.getElementById("addition").innerHTML = "The Addition: " + sum;
+        document.getElementById("subtraction").innerHTML = "The Subtraction: " + dif;
+        document.getElementById("multiplication").innerHTML = "The Multiplication: " + mul;
+        document.getElementById("division").innerHTML = "The Division: " + div;
+    </script>
+
+    <h1>Arrays</h1>
+    <h4 id="array"></h4>
+    <h4 id="arr"></h4>
+    <h4 id="arrr"></h4>
+    <h4 id="arrrr"></h4>
+    <h4 id="arrrrr"></h4>
+    <h4 id="length"></h4>
+    <script>
+        const fruits = ["Apple", "Banana", "Cherry", "Mango"];
+        fruits.push("Graps");
+        document.getElementById("array").innerHTML="Fruits Name : " + fruits;
+
+        document.getElementById("arr").innerHTML="Index 0 : " + fruits[0];
+        document.getElementById("arrr").innerHTML="Index 1 : " + fruits[1];
+        document.getElementById("arrrr").innerHTML="Index 2 : " + fruits[2];
+        document.getElementById("arrrrr").innerHTML="New value adderd in index 4 : " + fruits[4];
+        const length = fruits.length;
+        document.getElementById("length").innerHTML="Length of array : " + length;
+
+
+    </script>
+
+</body>
+
+</html>

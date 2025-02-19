@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Array - JS</title>
+</head>
+<body>
+    <script>
+        // Every array in JS is an object
+        // We mostly use const to declare the object
+        const obj ={
+            name:"Dinesh",
+            age:25,
+            address:{
+                district:"Kanchanpur",
+                city:"Belauri"
+            },
+            contact:{
+                phone:9810692077,
+                email:"dinesh@gmail.com"
+            },
+            hobbies:["Cricket","Football","Reading"],
+            education:{
+                school:"Bright Star Boarding School",
+                college:"KMC Dhangadhi",
+                bachelor:"SPA Dhangadhi"
+            },
+        }
+        console.log(obj);                       // Accessing all object properties
+        console.log(obj.address.district)       // Displaying the Kanchanpur
+        console.log(obj.hobbies[0])             // Displaying the Cricket
+        console.log(obj.hobbies.length)         // Displaying the length of hobies (3) starts from 1 ---- n
+    </script>
+</body>
+</html>

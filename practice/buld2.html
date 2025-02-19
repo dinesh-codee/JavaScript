@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Second Try</title>
+</head>
+<body>
+    <div>
+        <img src="../img/pic_bulboff.gif" alt="" id="bulb">
+        <button type="button" onclick="toggleButton()">Turn On</button>
+    </div>
+    <script>
+        let isOn = false;
+        function toggleButton(){
+            let bulb = document.getElementById("bulb");
+            let button = document.querySelector("button");
+    
+            if(isOn){
+                bulb.src="../img/pic_bulboff.gif";
+                button.innerText = "Turn Off";
+            }else{
+                bulb.src="../img/pic_bulbon.gif";
+                button.innerText = "Turn On";
+            }
+            isOn = !isOn;
+        }
+    </script>
+</body>
+</html>

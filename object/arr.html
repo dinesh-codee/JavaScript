@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array | Object</title>
+</head>
+<body>
+    <script>
+        // Array
+        // Declaring the FNAME
+        let fname=["dinesh", "manish", "Hari", "Shayam"];
+        console.log("List of arrays  "+fname);
+        console.log("Length of array: "+fname.length)
+        console.log("Index 0 array :"+fname[0]);
+        console.log("Adding the array : "+fname.push("Mahesh"))
+
+        console.log("End of fname")
+
+        // Declaring the LNAME
+        let lname = ["chy", "shaha", "kahtri", "pandey"];
+        console.log("The first element of lname :"+lname);
+        console.log("Diplaying the index 0 :"+lname.at(1))
+        console.log("Adding the array fname  and lname : "+fname.concat(lname));
+        console.log("Removing the last element :"+lname.pop())
+        console.log("After removing the pandey from array lname : "+lname);
+        console.log("END OF LNAME");
+
+
+        // Declaring the animals
+        let animal= ["cat", "dog", "monkey", "donkey"];
+        console.log("The original animal: "+animal)
+        console.log("The shift method : "+animal.shift())
+        console.log("The Remaining animal: "+animal)
+        console.log("The unshift method : "+animal.unshift("Lion"))
+        console.log("The Remaining animal: "+animal)
+        console.log("The reversed array : "+animal.reverse())
+
+
+
+
+        // Object
+        const obj={
+            fname:"Dinesh",
+            lname:"Kumar",
+            age:25
+        }
+        // console.log(obj.fname);
+    </script>
+</body>
+</html>
