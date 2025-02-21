@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: cursive;
+            height: 100vh;
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main{
+            border: 1px solid rgb(46, 38, 38);
+            border-radius: 10px;
+            box-shadow: 5px 5px 50px rgb(120, 114, 110);
+            padding: 50px 250px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #heading{
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #0da438;
+        }
+
+        .adjust{
+            margin: 10px 0;
+        }
+
+        .input{
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .cal{
+            background-color: #0da438;
+            color: #fff;
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .cal:hover {
+            background-color: #098a2d;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3 id="heading">Age Calculator</h3>
+        <form onsubmit="calculateAge(event)">
+            <p class="adjust">Enter Date of Birth</p>
+            <input class="adjust input" type="date" id="date"><br>
+            <button type="submit" class="adjust input cal">Calculate</button>
+        </form>
+        <h4 id="display"></h4>
+    </div>
+
+    <script>
+        function calculateAge(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            var dateInput = document.getElementById("date").value;
+            if (!dateInput) {
+                document.getElementById("display").innerHTML = "Please select a date.";
+                return;
+            }
+
+            var birthDate = new Date(dateInput);
+            var today = new Date();
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var month = today.getMonth() - birthDate.getMonth();
+            var day = today.getDate() - birthDate.getDate();
+
+            if (month < 0 || (month === 0 && day < 0)) {
+                age--; // Adjust age if birthday hasn't happened yet this year
+            }
+
+            document.getElementById("display").innerHTML = "You are " + age + " years "+ month +" Month(s) "+ day +" day(s) old";
+        }
+    </script>
+</body>
+</html>

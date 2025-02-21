@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal- Age</title>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Age Calculator</h1>
+            <p>Enter The Age To Calculate</p>
+            <input type="date" name="" id="input-field"><br>
+            <button type="button" onclick="calculate()">Calculate</button>
+            <p id="display"></p>
+        </main>
+    </div>
+    <script>
+        function calculate (){
+            let input = document.getElementById("input-field").value;
+            let age = parseInt(input);
+            let year = new Date().getFullYear();
+            let result = year - age;
+            document.getElementById("display").innerHTML = "You are " + result + " years old";            
+        }
+    </script>
+</body>
+</html>
