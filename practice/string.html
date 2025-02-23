@@ -11,13 +11,50 @@
     let str1 = "Dinesh, Milan, Sabin";
     let str2 = "Chy, Dhami, Bohora";
 
-    console.log(str1);
+    console.log("All String : "+str1+" And "+str2);
     // Slicing in JS
     console.log("The slice : "+str1.slice(0,6));
     // Concaditation
     console.log("The concadination : "+str1.concat(str2));
     // Length of str1
     console.log("The length of str1 : "+str1.length);
+    // UpperCase
+    console.log("The uppercase transformation : "+str2.toUpperCase());
+    // lowercase
+    console.log("The lowercasecase transformation : "+str2.toLowerCase());
+
+
+
+    // Declaring new Variables
+    let str = "Hello JavaScript  ";
+    let trim = str.trim();
+    let replace = str.replace("H", "m")
+    let repeat = str.repeat(2);
+    let replaceall = str.replaceAll("Hello", "Bonjour")
+
+    console.log("Avaliable String : "+str)
+    console.log("Displaying the index using .at : "+str.charAt(0));
+    console.log("Similar to slicing : "+str.substr(0,5));
+    console.log("Negative Slicing : "+str.slice(-10));
+    console.log("Substring : "+str.substring(1,7));
+    console.log("Before Trim : "+str.length+" Triming "+trim+" After Trim : "+trim.length);
+    console.log("Spliting : "+str.split(""));
+    console.log("String replace : "+replace);
+    console.log("Repeating twice : "+repeat);
+    console.log("Replace all Method : "+replaceall);
+
+
+    // Using backticks
+    let fname = "Manjeet ";
+    let lname = "Java";
+    let full = [fname, lname].join("");
+    console.log(`We welcome Er. ${fname}
+    for their precious award ${lname} 
+    to print as it is : `);
+    console.log("The join method: "+[fname, lname].join(""))
+    console.log("The indexOf Method : "+full.indexOf("Java"))
+    console.log("The lastIndexOf Manjeet Method : "+full.lastIndexOf("Manjeet"))
+    console.log("Returns -1 if the str is not found");
   </script>
 
 </body>
